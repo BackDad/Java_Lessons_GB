@@ -12,6 +12,7 @@ public class Task_1 {
         removeDuplicates(integers);
         System.out.println(integers);
     }
+    //Дан массив удвлить дубликаты, сохранив последовательность
     private static void removeDuplicates(List<Integer> source){
         int i = 0;
         while (i<source.size()){
