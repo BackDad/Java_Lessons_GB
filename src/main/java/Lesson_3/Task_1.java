@@ -9,7 +9,8 @@ public class Task_1 {
 
         List<Integer> integers = new ArrayList<>(Arrays.asList(1,1,2,2,3,4,5,6,8,8));
         System.out.println(integers);
-        removeDuplicates(integers);
+        //removeDuplicates(integers);
+        removeDuplicates1(integers);
         System.out.println(integers);
     }
     //Дан массив удвлить дубликаты, сохранив последовательность
@@ -27,4 +28,19 @@ public class Task_1 {
         }
             
         }
+        // альтернативный способ решения задачи 1
+    private static void removeDuplicates1(List<Integer> source){
+        List<Integer> duplicates = new ArrayList<>();
+        int i = 0;
+        while (i<source.size()){
+            Integer element = source.get(i);
+            if (!duplicates.contains(element)){
+                duplicates.add((element));
+            }
+            else {
+                source.remove(i--);
+            }
+            i++;
+        }
+    }
     }
