@@ -1,0 +1,22 @@
+package Task_1;
+
+import java.text.DecimalFormat;
+
+public class Task_1 {
+    public static void main(String[] args) {
+        int [] a = new int[2];
+        a[0]=1 ;
+        a[1]=2 ;
+        int [] b = new int [2];
+       b[0] = 2;
+        b[1]=50;
+        System.out.println(new DecimalFormat( "#.##" ).format(VectorLen(a,b)));
+
+
+    }
+    public static double VectorLen(int [] a1, int [] b1){
+
+        return Math.sqrt(Math.pow((b1[0] - a1[0]), 2) + Math.pow((b1[1] - a1[1]), 2));
+    }
+}
+
