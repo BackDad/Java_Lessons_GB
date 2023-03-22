@@ -11,7 +11,14 @@ public class Task_1 {
        b[0] = 2;
         b[1]=50;
         System.out.println(new DecimalFormat( "#.##" ).format(VectorLen(a,b)));
-
+        Point2D a1 = new Point2D();
+        a1.x=1;
+        a1.y=2;
+        System.out.println(a1.toString());
+        Point2D b1 = new Point2D();
+        b1.x = 2;
+        b1.y =22;
+        System.out.println(b1.toString());
 
     }
     public static double VectorLen(int [] a1, int [] b1){
