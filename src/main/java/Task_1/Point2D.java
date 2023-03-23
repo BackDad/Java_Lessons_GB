@@ -6,4 +6,8 @@ public class Point2D {
         x=valueX;
         y=valueY;
     }
+    public Point2D(){
+        x=0;
+        y=0;
+    }
 }
