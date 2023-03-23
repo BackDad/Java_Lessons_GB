@@ -17,13 +17,17 @@ public class Task_1 {
         System.out.println(a1.toString());
         Point2D b1 = new Point2D();
         b1.x = 2;
-        b1.y =22;
+        b1.y =50;
         System.out.println(b1.toString());
+        System.out.println(OOPVectorLen(a1,b1));
 
     }
     public static double VectorLen(int [] a1, int [] b1){
 
         return Math.sqrt(Math.pow((b1[0] - a1[0]), 2) + Math.pow((b1[1] - a1[1]), 2));
+    }
+    public static double OOPVectorLen(Point2D a1, Point2D b1){
+        return Math.sqrt(Math.pow((a1.x-b1.x),2)+Math.pow((a1.y-b1.y),2));
     }
 }
 
