@@ -16,7 +16,7 @@ public class Task_1 {
 
         Point2D a1 = new Point2D(10);
         Point2D b1 = new Point2D(10);
-        System.out.println(OOPVectorLen(a1,b1));
+        System.out.println(OOPVectorLen(a1,b));
 
 
 

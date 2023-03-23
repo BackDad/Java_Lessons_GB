@@ -14,4 +14,7 @@ public class Point2D {
         x=value;
         y=value;
     }
+    public  String getInfo(){
+        return String.format("x:%d , y:%d",x, y);
+    }
 }
