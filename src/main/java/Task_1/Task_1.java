@@ -24,5 +24,6 @@ public class Task_1 {
     public static double OOPVectorLen(Point2D a, Point2D b){
         return Math.sqrt(Math.pow((a.x-b.x),2)+Math.pow((a.y-b.y),2));
     }
+
 }
 
